@@ -38,10 +38,10 @@ export default function DocsBreadcrumb({ paths,title }: { paths: string[], title
   );
 }
 
-function toTitleCase(input: string): string {
-  const words = input.split("-");
-  const capitalizedWords = words.map(
-    (word) => word.charAt(0).toUpperCase() + word.slice(1)
-  );
-  return capitalizedWords.join(" ");
-}
+// function toTitleCase(input: string): string {
+//   const words = input.split("-");
+//   const capitalizedWords = words.map(
+//     (word) => word.charAt(0).toUpperCase() + word.slice(1)
+//   );
+//   return capitalizedWords.join(" ");
+// }

@@ -27,7 +27,6 @@ export function Stepper({
     if ("vibrate" in navigator) {
       navigator.vibrate(100); // اهتزاز لمدة 200ms
     }
-    const remaining = Math.max(requiredClicks - updated[index], 0);
 
     if (updated[index] >= requiredClicks) {
       toast.success(`أكملت الذكر`);

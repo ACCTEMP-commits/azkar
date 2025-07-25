@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Link from "next/link";
-import { Button, buttonVariants } from "./ui/button";
-import { BookIcon, CommandIcon, FileIcon, FilmIcon, HeartIcon, Link2Icon, LinkIcon, MenuIcon, TriangleIcon } from "lucide-react";
+import { buttonVariants } from "./ui/button";
+import { CommandIcon, LinkIcon, TriangleIcon } from "lucide-react";
 import toast from "react-hot-toast";
 
 export function Footer() {
