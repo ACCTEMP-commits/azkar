@@ -49,9 +49,7 @@ export function FooterButtons() {
     } else if (navigator.clipboard) {
       try {
         await navigator.clipboard.writeText(url);
-        setCopied(true);
         toast.success(`تم النسخ`);
-        setTimeout(() => setCopied(false), 2000);
       } catch (error) {
         console.error('فشل في النسخ:', error);
         toast.error('المتصفح لا يدعم النسخ التلقائي.')
@@ -64,9 +62,7 @@ export function FooterButtons() {
       input.select();
       document.execCommand('copy');
       document.body.removeChild(input);
-      setCopied(true);
       toast.success(`تم النسخ`);
-      setTimeout(() => setCopied(false), 2000);
     }
   };
   return (
