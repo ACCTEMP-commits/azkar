@@ -29,7 +29,6 @@ export function Footer() {
 }
 
 export function FooterButtons() {
-  const [ setCopied] = useState(false);
 
   const handleShare = async () => {
     const url = window.location.href;
