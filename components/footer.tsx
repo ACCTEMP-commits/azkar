@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { CommandIcon, LinkIcon, TriangleIcon } from "lucide-react";
+import { Button, buttonVariants } from "./ui/button";
+import { BookIcon, CommandIcon, FileIcon, FilmIcon, HeartIcon, Link2Icon, LinkIcon, MenuIcon, TriangleIcon } from "lucide-react";
 import toast from "react-hot-toast";
 
 export function Footer() {
@@ -29,7 +29,7 @@ export function Footer() {
 }
 
 export function FooterButtons() {
-  const [, setCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const url = window.location.href;
@@ -43,7 +43,7 @@ export function FooterButtons() {
         });
         console.log('تمت المشاركة!');
       } catch (error) {
-        toast.error(`خطأ في المشاركة`);
+        // toast.error(`خطأ في المشاركة`);
         console.error('خطأ أثناء المشاركة:', error);
       }
     } else if (navigator.clipboard) {
